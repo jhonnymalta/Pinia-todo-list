@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap");
+
+body {
+  background: #f2f2f2;
+  color: #444;
+  margin: 0;
+}
+body * {
+  font-family: "Fredoka One", cursive;
+}
+header {
+  text-align: center;
+  background: #e7e7e7;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header img {
+  max-width: 60px;
+  transform: rotate(-10deg);
+  margin-right: 20px;
+}
+.task-list {
+  max-width: 640px;
+  margin: 20px auto;
+}
+.task {
+  padding: 6px 20px;
+  background: #fff;
+  margin-top: 20px;
+  border-radius: 4px;
+  box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.05);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.task h3,
+.task .icons {
+  display: inline-block;
+}
+.task .icons {
+  text-align: right;
+}
+.task i {
+  font-size: 1.4em;
+  margin-left: 6px;
+  cursor: pointer;
+  color: #bbb;
+}
+.filter {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+.filter button {
+  display: inline-block;
+  margin-left: 10px;
+  background: #bbb;
+
+  border-radius: 4px;
+  padding: 4px 8px;
+  cursor: pointer;
+  font-size: 0.8em;
+  font-size: 1em;
+  color: #fff;
+}
+.new-task-form {
+  display: flex;
+  justify-content: center;
+}
+.new-task-form input {
+  margin-top: 50px;
+  border: 2px solid #bbb;
+  border-radius: 4px 0 0 4px;
+  height: 40px;
+  width: 340px;
+}
+.new-task-form button {
+  background: #bbb;
+  padding: 4px 8px;
+  height: 42px;
+  width: 80px;
+  border-radius: 0 10px 10px 0;
+  color: #fff;
+}
+.task i.active {
+  color: rgb(255, 47, 47);
+}
